@@ -27,7 +27,7 @@ body {
   background-attachment: fixed;
   background-color: var(--Purple-100);
 }
-@media (max-width: 1660px) {
+@media (max-width: 105em) {
   .head {
     display: flex;
     align-items: center;
@@ -38,6 +38,7 @@ body {
   }
   main {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
@@ -75,20 +76,35 @@ body {
   p{
     margin-bottom: 20px;
   }
-  .attribution {
-    margin-top: 30px;
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  }
 }
-@media (max-width: 375px) {
+@media (max-width: 500px) {
   body {
     background-image: url("./assets/images/background-pattern-mobile.svg");
+    
+    background-size: 100%;
+  }
+  .head{
+    gap: 1em;
+  }
+  main{
+    padding: 0 1.25em;
+  }
+  .card-container{
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+  button{
+    text-align: start;
   }
 }
 .active {
   display: none;
+}
+.attribution {
+  margin-top: 30px;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
