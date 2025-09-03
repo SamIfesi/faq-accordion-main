@@ -66,6 +66,7 @@ body {
     display: flex;
     align-items: center;
     transition: color 300ms ease;
+    text-align: start;
   }
   button:hover {
     color: var(--purple-hover);
